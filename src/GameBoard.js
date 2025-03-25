@@ -13,7 +13,7 @@ const SYMBOLS = {
   CORNER_TL: '╔',
   CORNER_TR: '╗',
   CORNER_BL: '╚',
-  CORNER_BR: '╝'
+  CORNER_BR: '╝',
 };
 
 // Проверка, является ли позиция головой змейки
@@ -58,17 +58,17 @@ const renderBottomBorder = () => {
 const GameBoard = ({ snake, food, score, gameOver }) => {
   // Создаём массив строк игрового поля
   const rows = [];
-  
+
   // Добавляем верхнюю границу
   rows.push(renderTopBorder());
-  
+
   // Генерируем строки игрового поля
   for (let y = 0; y < GAME_HEIGHT; y++) {
     const cellsInRow = [];
-    
+
     // Добавляем левую границу
     cellsInRow.push(SYMBOLS.BORDER_V);
-    
+
     // Заполняем клетки в строке
     for (let x = 0; x < GAME_WIDTH; x++) {
       if (isSnakeHead(x, y, snake)) {
@@ -81,10 +81,10 @@ const GameBoard = ({ snake, food, score, gameOver }) => {
         cellsInRow.push(SYMBOLS.EMPTY);
       }
     }
-    
+
     // Добавляем правую границу
     cellsInRow.push(SYMBOLS.BORDER_V);
-    
+
     // Добавляем строку в массив
     rows.push(
       <Box key={y}>
@@ -92,21 +92,21 @@ const GameBoard = ({ snake, food, score, gameOver }) => {
       </Box>
     );
   }
-  
+
   // Добавляем нижнюю границу
   rows.push(renderBottomBorder());
-  
+
   // Отображение счета и статуса игры
-  const statusMessage = gameOver
-    ? <Text color="red">ИГРА ОКОНЧЕНА! Ваш счет: {score}</Text>
-    : <Text>Счет: {score}</Text>;
-  
+  const statusMessage = gameOver ? (
+    <Text color="red">ИГРА ОКОНЧЕНА! Ваш счет: {score}</Text>
+  ) : (
+    <Text>Счет: {score}</Text>
+  );
+
   return (
     <Box flexDirection="column">
       {rows}
-      <Box marginTop={1}>
-        {statusMessage}
-      </Box>
+      <Box marginTop={1}>{statusMessage}</Box>
       {gameOver && (
         <Box marginTop={1}>
           <Text>Нажмите 'r' для перезапуска или 'q' для выхода</Text>

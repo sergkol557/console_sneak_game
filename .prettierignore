@@ -1,0 +1,23 @@
+# Сборка и дистрибутив
+dist
+build
+coverage
+node_modules
+
+# Другие файлы, которые не нужно форматировать
+package-lock.json
+yarn.lock
+.DS_Store
+.env
+*.log
+*.svg
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.ico
+*.woff
+*.woff2
+*.eot
+*.ttf
+*.otf
