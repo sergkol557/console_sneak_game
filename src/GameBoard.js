@@ -5,9 +5,9 @@ import { GAME_WIDTH, GAME_HEIGHT } from './utils';
 // Символы для отображения
 const SYMBOLS = {
   EMPTY: ' ',
-  SNAKE_HEAD: '█',
-  SNAKE_BODY: '▓',
-  FOOD: '●',
+  SNAKE_HEAD: '🐍', // Змея (голова)
+  SNAKE_BODY: '◊', // Ромб для тела змеи
+  FOOD: '🍎', // Яблоко для еды
   BORDER_H: '═',
   BORDER_V: '║',
   CORNER_TL: '╔',
