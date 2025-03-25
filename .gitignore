@@ -19,6 +19,7 @@ yarn-error.log*
 .vercel
 .netlify
 *.tsbuildinfo
+dist/
 
 # Тестирование и покрытие кода
 /coverage/
