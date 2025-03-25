@@ -378,3 +378,376 @@ phpstan-baseline.neon
 /Phakefile
 /robo.yml
 /RoboFile.php
+
+# JavaScript / TypeScript
+# ======================
+
+# Зависимости для JavaScript/TypeScript
+node_modules/
+jspm_packages/
+bower_components/
+.pnp.*
+.npm
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.yarn/*
+!.yarn/cache
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
+.pnpm-store/
+
+# Логи и сборки TypeScript
+tsconfig.tsbuildinfo
+*.tsbuildinfo
+.tscache/
+.ts-cache/
+
+# Кэш ESLint
+.eslintcache
+.eslintrc.json
+.eslintrc.js
+.eslintrc
+.eslintrc.yaml
+.eslintrc.yml
+
+# Кэш TernJS
+.tern-port
+
+# Кэш и конфигурация Prettier
+.prettierrc
+.prettierrc.json
+.prettierrc.toml
+.prettierrc.js
+.prettierrc.cjs
+.prettierrc.yaml
+.prettierrc.yml
+.prettierignore
+prettier.config.js
+
+# Next.js
+.next/
+out/
+.vercel/
+.serverless/
+.fusebox/
+dist/
+.deploy/
+.docz/
+
+# Gatsby
+.cache/
+public/
+
+# Vue
+.nuxt/
+.output/
+.nitro/
+.vitepress/dist
+.vitepress/cache
+
+# React Native
+.expo/
+web-build/
+ios/Pods/
+android/.gradle
+
+# Angular
+.angular/cache/
+.sass-cache/
+connect.lock
+libpeerconnection.log
+testem.log
+
+# Svelte
+.svelte-kit
+
+# Электрон
+electron.js.map
+electron.js
+electron/
+dist_electron/
+
+# Remix
+.remix/
+.cache/
+app/styles/tailwind.css
+
+# Storybook
+storybook-static/
+
+# Cypress
+cypress/videos/
+cypress/screenshots/
+cypress/downloads/
+
+# Инструменты тестирования
+coverage/
+.nyc_output/
+.clinic/
+.jest-cache/
+test-report.xml
+test-results.xml
+junit.xml
+.jscpd/
+
+# Webpack
+.webpack/
+.webpackrc
+.webpackrc.js
+webpack.config.ts
+webpack.config.js
+webpack.config.babel.js
+webpack.*.js
+.dll-link-plugin-manifest.json
+
+# Rollup
+rollup.config.js
+rollup.config.ts
+
+# Vite
+vite.config.js
+vite.config.ts
+.vite-ssg-dist/
+.vite-ssg-temp/
+
+# Esbuild
+esbuild.config.js
+esbuild.config.ts
+
+# Turbo
+.turbo
+
+# Пакетные решения
+lerna-debug.log
+lerna.json
+nx.json
+nx-cloud.env
+
+# Fastify
+fastify-plugin.d.ts
+
+# TypeORM
+ormconfig.json
+ormconfig.js
+ormconfig.ts
+ormconfig.yaml
+ormconfig.yml
+
+# Sequelize
+migrations/
+seeders/
+models/
+
+# Prisma
+prisma/.env
+prisma/schema.prisma
+prisma/migrations/
+prisma/seed.ts
+
+# Nest.js
+nest-cli.json
+
+# Deno
+deno.lock
+
+# Bun
+bun.lockb
+
+# Специфические файлы Babel
+babel.config.js
+.babelrc
+.babelrc.js
+.babelrc.json
+babel-loader.config.js
+
+# Файлы для Grunt
+Gruntfile.js
+.grunt/
+
+# Gulp
+gulpfile.js
+gulp.config.js
+
+# Инструменты анализа кода
+.jshintrc
+.jscsrc
+.jsbeautifyrc
+
+# Инструменты деплоя и CI/CD
+.travis.yml
+.gitlab-ci.yml
+.github/
+.circleci/
+codeship-services.yml
+codeship-steps.yml
+.releaserc
+.release-it.json
+.sentryclirc
+.crowdin.yml
+.browserslistrc
+
+# TypeDoc
+typedoc.json
+.typedoc
+
+# JSDoc
+jsdoc.json
+.jsdoc.json
+jsdoc.config.js
+conf.json
+
+# Инструменты для Monorepo
+.changeset/
+pnpm-workspace.yaml
+.yarnrc
+.yarnrc.yml
+lage.config.js
+
+# Bash / Shell скрипты
+# ===================
+
+# Логи
+*.log
+log/
+logs/
+
+# Временные файлы Bash
+.bash_history
+.sh_history
+*.swp
+*~
+.*.swp
+.local/
+.bash_profile
+.bashrc
+.bash_logout
+.profile
+.ssh/
+.gnupg/
+.config/
+.inputrc
+.dircolors
+.lesshst
+.mysql_history
+.node_repl_history
+.npm/
+.v8flags*
+.node_history
+.wget-hsts
+.irb_history
+.viminfo
+.psql_history
+.python_history
+.rediscli_history
+.sqlite_history
+
+# Windows специфичные файлы
+# ========================
+
+# Системные файлы Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msm
+*.msp
+*.lnk
+*.stackdump
+*.db
+*.DS_Store
+Icon?
+
+# Файлы для Visual Studio
+*.rsuser
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.userprefs
+*.usertasks
+*.vbw
+*.vbp
+*.csproj.user
+*.vcxproj.user
+*.vcproj.user
+.vs/
+_ReSharper*/
+*.[Rr]e[Ss]harper
+*.DotSettings.user
+_UpgradeReport_Files/
+Backup*/
+UpgradeLog*.XML
+UpgradeLog*.htm
+ServiceFabricBackup/
+*.rptproj.bak
+FakesAssemblies/
+
+# MS Office временные файлы
+~$*.doc*
+~$*.xls*
+~$*.ppt*
+~$*.vsd*
+*.~vsd
+*.xlk
+~*.tmp
+~*.docx
+~*.xlsx
+~*.pptx
+
+# Windows Installer файлы
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+
+# Исполняемые файлы и DLL
+*.exe
+*.dll
+*.bat
+*.cmd
+*.com
+*.msc
+
+# Windows thumbnail кэш
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+
+# Временные файлы дампа
+*.stackdump
+*.dmp
+
+# Файлы Windows Defender
+*.quarantine
+
+# Персональные настройки
+*.ini
+*.manifest
+*.appref-ms
+
+# Файлы настроек для популярных редакторов Windows
+_ReSharper*/
+*.[Rr]e[Ss]harper
+*.DotSettings.user
+.idea/
+.vscode/
+*.code-workspace
+.ionide/
+.metals/
+.history/
+
+# Специфические файлы Windows Live
+*.livecontact
+*.livetheme
+*.contactsettings
+
+# Windows Server
+WindowsImageBackup/
